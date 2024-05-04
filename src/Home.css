@@ -1,0 +1,243 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-size: 16px;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+.heading-mobile h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+#mobile-bar-btn {
+  background: transparent;
+}
+.fa-bars {
+  font-size: 30px;
+  opacity: 0.7;
+}
+
+.fa-ellipsis-vertical {
+  font-size: 25px;
+  opacity: 0.7;
+}
+.chart-container {
+  margin: 0 1rem;
+  background-color: #ffffff;
+}
+.chart-container p {
+  padding: 1rem 1rem 0;
+}
+.line-chart-div canvas {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 1rem;
+}
+
+.vertical-graph-div canvas {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 1rem;
+}
+.vertical-graph-container {
+  margin: 0 1rem;
+  background-color: #ffffff;
+}
+
+.vertical-graph-container p {
+  padding: 1rem 1rem 0;
+}
+
+.menu-list {
+  text-align: center;
+  padding: 2rem 0;
+  border-radius: 1rem;
+}
+
+.menu-item div {
+  padding-bottom: 2rem;
+  color: #f5f6fa;
+  display: flex;
+  height: 3.5rem;
+  justify-content: start;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.menu-item div a {
+  font-size: 0.9rem;
+}
+
+.menu-item div:nth-child(1) {
+  margin-top: 2rem;
+}
+.offcanvas-body {
+  background-color: #2183f8;
+}
+.user-detail {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  margin: 0.5rem;
+  border-bottom: 2px solid #f5f6fa;
+  display: flex;
+  justify-content: center;
+}
+
+.user-detail img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+@media (min-width: 992px) {
+  .user-button img {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.8rem;
+    border-radius: 50%;
+  }
+  .user-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .line-chart-div canvas {
+    width: 100% !important;
+    height: 45vh !important;
+  }
+  .menu-laptop {
+    height: 80vh;
+    position: fixed;
+    width: 250px;
+    margin-left: 1rem;
+  }
+  .dashboard-content {
+    margin-left: 267px;
+  }
+
+  .vertical-graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .vertical-graph-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .fa-magnifying-glass,
+  .upper-user {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  .fa-magnifying-glass {
+    margin-right: 2rem;
+  }
+  .dropdown-toggle::after {
+    margin-left: -0.745em;
+  }
+
+  #heading-lg {
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #f5f6fa;
+    padding: 1rem;
+    border: 1px solid #f5f6fa;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+  .menu-list {
+    text-align: center;
+    padding: 2rem 0 0;
+    border-radius: 1rem;
+    background: #2183f8;
+  }
+
+  .menu-item div {
+    padding-bottom: 2rem;
+    color: #f5f6fa;
+    display: flex;
+    height: 3.5rem;
+    justify-content: start;
+    text-transform: uppercase;
+    align-items: center;
+  }
+  .menu-item div a {
+    font-size: 0.8rem;
+  }
+  .menu-item div i {
+    margin-right: 2rem;
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .menu-item div:nth-child(1) {
+    padding-top: 2.5rem;
+  }
+  .user-detail {
+    font-size: 1.5rem;
+    padding-bottom: 1.4rem;
+    margin: 0;
+    border-bottom: 2px solid #f5f6fa;
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-detail img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  .chart-container {
+    margin-top: 20px;
+    border-radius: 0.5rem;
+  }
+
+  .vertical-graph-container {
+    border-radius: 0.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* .chart-container{
+        width: 00px;
+        height: 500px;
+    } */
+  .line-chart-div canvas {
+    width: 100% !important;
+    height: 450px !important;
+  }
+
+  .menu-laptop {
+    height: 95vh;
+  }
+}
